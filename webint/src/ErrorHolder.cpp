@@ -1,7 +1,7 @@
 #include <ros/ros.h>
 #include <std_msgs/Float64.h>
 #include <robohow_common_msgs/ConstraintConfig.h>
-#include <webint/WebifTaskInfo.h>
+#include <webint_msgs/WebifTaskInfo.h>
 #include <algorithm>
 
 //Multithread boost
@@ -22,7 +22,7 @@ public:
   {
     m_sot_tasks = m_nh.subscribe( "/constraint_config", 1, 
                       (boost::function < void(const robohow_common_msgs::ConstraintConfig::ConstPtr&)>) boost::bind( &Holder::configCB, this, _1 ));
-    m_webif = m_nh.advertise<webint::WebifTaskInfo>( "/webif_config", 1);
+    m_webif = m_nh.advertise<webint_msgs::WebifTaskInfo>( "/webif_config", 1);
     
     m_thread = boost::thread(
                 boost::bind(
@@ -35,7 +35,7 @@ public:
         ros::Rate loop(5);
         while(ros::ok())
         {
-          webint::WebifTaskInfo out_msg;
+          webint_msgs::WebifTaskInfo out_msg;
     
 //           for(std::map<std::string, ros::Subscriber>::iterator it=m_errors.begin();
 //               it!=m_errors.end();it++)

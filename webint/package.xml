@@ -1,0 +1,23 @@
+<package>
+  <name>webint</name>
+  <version>0.1.0</version>
+  <description>
+
+     Simple web interface using rosbridge server and websocket
+     to show expressiongraph structure and SoT tasks, for review year 2.
+
+  </description>
+  <author>Enea Scioni</author>
+  <maintainer email="Aertbelien@tobefilled.fr">Erwin Aertbelien</maintainer>
+  <license>BSD</license>
+  <url>http://ros.org/wiki/webint</url>
+  <buildtool_depend>catkin</buildtool_depend> 
+  <build_depend>roscpp</build_depend>
+  <build_depend>robohow_common_msgs</build_depend>
+  <build_depend>webint_msgs</build_depend>
+
+  <run_depend>robohow_common_msgs</run_depend>
+  <run_depend>webint_msgs</run_depend>
+</package>
+
+
