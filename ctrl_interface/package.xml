@@ -1,0 +1,32 @@
+<package>
+  <name>ctrl_interface</name>
+  <version>0.1.0</version>
+  <description>
+
+     ctrl_interface
+
+  </description>
+  <author>Enea Scioni</author>
+  <maintainer email="Aertbelien@tobefilled.fr">Erwin Aertbelien</maintainer>
+
+  <license>BSD</license>
+  <url>http://ros.org/wiki/ctrl_interface</url>
+  
+  <buildtool_depend>catkin</buildtool_depend> 
+  <build_depend>roscpp</build_depend>
+  <build_depend>dynamic_graph_bridge_msgs</build_depend>
+  <build_depend>console_bridge</build_depend>
+
+  <run_depend>console_bridge</run_depend>
+  <run_depend>dynamic_graph_bridge_msgs</run_depend>
+
+<!--
+  <run_depend>eigen</run_depend>
+
+  <depend package="std_msgs" />
+  <depend package="sensor_msgs" />
+  <depend package="dynamic_graph_bridge_msgs" />
+-->
+</package>
+
+
