@@ -5,7 +5,6 @@
 
 import sys
 import roslib
-roslib.load_manifest('motion_viz')
 import rospy
 import tf
 import tf_conversions.posemath as pm

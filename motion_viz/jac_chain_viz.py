@@ -12,7 +12,6 @@
 from math import *
 
 import roslib
-roslib.load_manifest('motion_viz')
 import rospy
 import tf
 import PyKDL as kdl

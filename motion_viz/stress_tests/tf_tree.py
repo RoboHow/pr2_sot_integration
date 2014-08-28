@@ -5,9 +5,6 @@
 from math import *
 
 import roslib
-roslib.load_manifest('tf')
-roslib.load_manifest('kdl')
-
 import rospy
 import tf
 import PyKDL as kdl

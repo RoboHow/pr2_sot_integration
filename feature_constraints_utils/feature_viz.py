@@ -20,8 +20,6 @@ ConstraintConfig message.
 
 
 import roslib
-roslib.load_manifest('motion_viz')
-roslib.load_manifest('robohow_common_msgs')
 import PyKDL as kdl
 import marker
 import rospy
